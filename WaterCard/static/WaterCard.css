@@ -65,13 +65,29 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    bottom: 1.5em;
+    bottom: var(--cutoff);
     margin: 0 var(--arschwasser-height) 0 0;
-    background: linear-gradient(45deg, #ff0000, #0000ff);
 }
 
 .mastodon, .email, .phone, .website {
-    font-size: 0.9em;
+    font-size: 0.69em;
+}
+
+.mastodon img, .email img, .phone img, .website img {
+    display: inline;
+    border: none;
+    padding-right: 0.2em;
+    vertical-align: middle;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.primary {
+    color: var(--orange);
+}
+
+.secondary {
+    color: var(--water);
 }
 
 hr {

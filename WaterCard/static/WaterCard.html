@@ -12,10 +12,13 @@
     <hr class="gradient">
     <div class="title">{% if title is defined %}{{ title }}{% else %}Unemployed{% endif %}</div>
     <div class="contact">
-      {% if mastodon is defined %}<div class="mastodon">{{ mastodon }}</div>{% endif %}
-      {% if email is defined %}<div class="email">{{ email }}</div>{% endif %}
-      {% if phone is defined %}<div class="phone">{{ phone }}</div>{% endif %}
-      {% if website is defined %}<div class="website">{{ website }}</div>{% endif %}
+      {% if mastodon is defined %}<div class="mastodon primary"><img src="icons/Mastodon.png" alt="">{{ mastodon }}</div>{% endif %}
+      {% if mastodon1 is defined %}<div class="mastodon secondary"><img src="icons/Mastodon.png" alt="">{{ mastodon1 }}</div>{% endif %}
+      {% if email is defined %}<div class="email primary"><img src="icons/EMail.png" alt="">{{ email }}</div>{% endif %}
+      {% if email1 is defined %}<div class="email secondary"><img src="icons/EMail.png" alt="">{{ email1 }}</div>{% endif %}
+      {% if phone is defined %}<div class="phone primary"><img src="icons/Phone.png" alt="">{{ phone }}</div>{% endif %}
+      {% if phone1 is defined %}<div class="phone secondary"><img src="icons/Phone.png" alt="">{{ phone1 }}</div>{% endif %}
+      {% if website is defined %}<div class="website primary"><img src="icons/Website.png" alt="">{{ website }}</div>{% endif %}
     </div>
   </body>
 </html>
