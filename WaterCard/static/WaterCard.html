@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de_DE">
+  <head>
+    <meta charset="utf-8">
+    <link href="WaterCard.css" rel="stylesheet">
+    <title>WaterCard - {{ name }}</title>
+    <meta name="description" content="WaterCard">
+  </head>
+  <body>
+    <div class="arschwasser"><img src="Arschwasser.png" alt="Arschwasser Logo"></div>
+    <div class="name">{{ name }}</div>
+    <hr class="gradient">
+    <div class="title">{% if title is defined %}{{ title }}{% else %}Unemployed{% endif %}</div>
+    <div class="contact">
+      {% if mastodon is defined %}<div class="mastodon">{{ mastodon }}</div>{% endif %}
+      {% if email is defined %}<div class="email">{{ email }}</div>{% endif %}
+      {% if phone is defined %}<div class="phone">{{ phone }}</div>{% endif %}
+      {% if website is defined %}<div class="website">{{ website }}</div>{% endif %}
+    </div>
+  </body>
+</html>

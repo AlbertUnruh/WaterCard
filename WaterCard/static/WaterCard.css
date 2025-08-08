@@ -1,0 +1,101 @@
+:root {
+    --orange: #e97524;
+    --water: #aac5da;
+    --width: 9.1cm;
+    --height: 6.1cm;
+    --cutoff: 0.3cm;
+    --arschwasser-height: 27px;
+    --arschwasser-width: 153px;
+    --icon-size: 1em;
+}
+
+@page {
+    size: var(--width) var(--height);
+    margin: var(--cutoff);
+}
+
+html {
+    max-width: var(--width);
+    max-height: var(--height);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-content: baseline;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    width: calc(100% - 2 * var(--cutoff));
+    height: calc(100% - 2 * var(--cutoff));
+    padding: var(--cutoff);
+    margin: 0;
+}
+
+.arschwasser img {
+    display: block;
+    width: var(--arschwasser-width);
+    height: var(--arschwasser-height);
+    padding: 0;
+    margin: 0;
+    transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+    position: absolute;
+    top: 0;
+    right: var(--cutoff);
+}
+
+.name {
+    color: var(--orange);
+    font-weight: bolder;
+    font-size: 1cm;
+}
+
+.title {
+    color: var(--water);
+    font-weight: italic;
+    font-size: 0.5cm;
+}
+
+.contact {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    bottom: 1.5em;
+    margin: 0 var(--arschwasser-height) 0 0;
+    background: linear-gradient(45deg, #ff0000, #0000ff);
+}
+
+.mastodon, .email, .phone, .website {
+    font-size: 0.9em;
+}
+
+hr {
+    display: flex;
+    border: none;
+
+    &:before, &:after {
+        content: "";
+        flex: 1;
+    }
+}
+
+hr.gradient {
+    align-items: stretch;
+    margin: 0.2em var(--arschwasser-height) 0 0;
+    height: 0.2em;
+    line-height: 0;
+    color: var(--water);
+    background: var(--orange);
+
+    &:before {
+        background: linear-gradient(to right, var(--water), var(--orange));
+    }
+    &:after {
+        background: linear-gradient(to left,var(--water), var(--orange));
+	}
+}

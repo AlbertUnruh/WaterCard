@@ -1,0 +1,7 @@
+__author__ = "AlbertUnruh"
+__email__ = "AlbertUnruh@pm.me"
+__url__ = "https://github.com/AlbertUnruh/WaterCard"
+__license__ = "MIT"
+__copyright__ = f"(c) 2025 {__author__}"
+__version__ = "0.1.0"
+__description__ = "WaterCard maker for https://wir-kaufen-dein-arschwasser.de"
