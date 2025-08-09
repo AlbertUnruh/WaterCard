@@ -4,7 +4,7 @@ from WaterCard import generate
 
 
 kwargs = {
-    "name": input("Your name: "),
+    "name": input("Your name (press ENTER to be Anonymous): "),
     "title": input("Your title (press ENTER to be unemployed): "),
     "mastodon": input("Your primary Mastodon (ENTER to skip): "),
     "mastodon1": input("Your secondary Mastodon (ENTER to skip): "),

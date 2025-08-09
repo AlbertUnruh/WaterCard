@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="arschwasser"><img src="Arschwasser.png" alt="Arschwasser Logo"></div>
-    <div class="name">{{ name }}</div>
+    <div class="name">{% if name is defined %}{{ name }}{% else %}Anonymous{% endif %}</div>
     <hr class="gradient">
     <div class="title">{% if title is defined %}{{ title }}{% else %}Unemployed{% endif %}</div>
     <div class="contact">
