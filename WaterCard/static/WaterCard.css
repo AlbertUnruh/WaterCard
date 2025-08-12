@@ -69,6 +69,11 @@ body {
     margin: 0 var(--arschwasser-height) 0 0;
 }
 
+.contact a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .mastodon, .email, .phone, .website {
     font-size: 0.69em;
 }
