@@ -17,6 +17,10 @@ You can also use `requirements.txt`.
 
 Just run `poetry run python -m WaterCard` and answer the questions.
 
+### I said "I don't want to use `poetry`..."
+
+Then just use `python -m WaterCard` *or any other equivalent* and answer the questions.
+
 
 ## The Program Exits With An Error :(
 
