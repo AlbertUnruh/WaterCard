@@ -1,5 +1,7 @@
 # WaterCard
-WaterCard maker for [wir-kaufen-dein-arschwasser.de](https://wir-kaufen-dein-arschwasser.de)
+WaterCard maker for [wir-kaufen-dein-arschwasser.de](https://wir-kaufen-dein-arschwasser.de).
+
+Examples can be seen [here](https://wir-kaufen-dein-arschwasser.de/WaterCard/).
 
 
 ## How To Install
