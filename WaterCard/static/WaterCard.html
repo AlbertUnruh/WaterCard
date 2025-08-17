@@ -1,13 +1,21 @@
 <!doctype html>
-<html lang="de_DE">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link href="WaterCard.css" rel="stylesheet">
-    <title>WaterCard - {{ name }}</title>
-    <meta name="description" content="WaterCard">
+    <title>WaterCard - {% if name is defined %}{{ name }}{% else %}Anonymous{% endif %}</title>
+    <meta content="WaterCard" property="og:title">
+    <meta content="WaterCard from {% if name is defined %}{{ name }}{% else %}Anonymous{% endif %}" name="description">
+    <meta content="WaterCard from {% if name is defined %}{{ name }}{% else %}Anonymous{% endif %}" name="og:description">
+    <!--
+    {{ description }}
+
+    Generated with version {% if version is defined %}{{ version }}{% else %}{{ 0.0.0 }}{% endif %} of
+    {{ url }} by {{ author }}.
+    -->
   </head>
   <body>
-    <div class="arschwasser"><img src="Arschwasser.png" alt="Arschwasser Logo"></div>
+    <div class="arschwasser"><a href="https://wir-kaufen-dein-arschwasser.de"><img src="Arschwasser.png" alt="Arschwasser Logo"></a></div>
     <div class="name">{% if name is defined %}{{ name }}{% else %}Anonymous{% endif %}</div>
     <hr class="gradient">
     <div class="title">{% if title is defined %}{{ title }}{% else %}Unemployed{% endif %}</div>

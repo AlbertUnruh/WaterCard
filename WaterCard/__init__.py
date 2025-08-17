@@ -3,7 +3,7 @@ __email__ = "AlbertUnruh@pm.me"
 __url__ = "https://github.com/AlbertUnruh/WaterCard"
 __license__ = "MIT"
 __copyright__ = f"(c) 2025 {__author__}"
-__version__ = "1.1.2"
+__version__ = "1.1.3"
 __description__ = "WaterCard maker for https://wir-kaufen-dein-arschwasser.de"
 
 __all__ = ("generate",)
@@ -31,10 +31,12 @@ def generate(**kwargs: str) -> Path:
 
     This function returns the path to your WaterCard.
     """
+    kwargs.update({"description": __description__, "version": __version__, "url": __url__, "author": __author__})
     chdir(static)
     template = Environment(loader=FileSystemLoader("."), autoescape=True).get_template("WaterCard.html")
     tmp_html = static.joinpath(".tmp_html.html")
     tmp_html.write_text(template.render(**kwargs))  # direct use of Jinja2 doesn't work somehow...
     HTML(tmp_html).write_pdf(out := cwd.joinpath(f"WaterCard-{kwargs.get("name", "Anonymous")}.pdf"))
     tmp_html.unlink()
+    chdir(cwd)
     return out
