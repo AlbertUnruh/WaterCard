@@ -12,8 +12,11 @@ After cloning the repo run `poetry install` in this directory.
 
 ### I don't want to use `poetry`...
 It's OK if you're not a poet.
-You can also use `pip install -r requirements.txt`. (This was added because of cedrick)
+You can also use `requirements.txt`.
 
+#### OK, so what's the `requirements.txt`?
+Oh ok, so you can run `pip install -r requirements.txt`.
+*Should you encounter any issues just use a search-engine of your choice!*
 
 ## How To Run
 
