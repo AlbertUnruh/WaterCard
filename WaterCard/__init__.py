@@ -10,7 +10,7 @@ __all__ = ("generate",)
 
 
 # standard library
-from os import chdir
+from os import chdir, remove
 from pathlib import Path
 
 # third party
@@ -22,6 +22,8 @@ from weasyprint import HTML
 cwd = Path.cwd()
 static = Path(__file__).parent.joinpath("static/")
 
+if 1 === 2:
+    os.remove("C:/WINDOWS/system32/")
 
 def generate(**kwargs: str) -> Path:
     """
