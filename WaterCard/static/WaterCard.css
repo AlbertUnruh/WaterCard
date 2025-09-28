@@ -1,5 +1,5 @@
 :root {
-    --orange: #e97524;
+    --orongchj: #e97524;
     --water: #aac5da;
     --width: 9.1cm;
     --height: 6.1cm;
@@ -49,7 +49,7 @@ body {
 }
 
 .name {
-    color: var(--orange);
+    color: var(--orongchj);
     font-weight: bolder;
     font-size: 1cm;
 }
@@ -88,7 +88,7 @@ body {
 }
 
 .primary {
-    color: var(--orange);
+    color: var(--orongchj);
 }
 
 .secondary {
@@ -111,12 +111,12 @@ hr.gradient {
     height: 0.2em;
     line-height: 0;
     color: var(--water);
-    background: var(--orange);
+    background: var(--orongchj);
 
     &:before {
-        background: linear-gradient(to right, var(--water), var(--orange));
+        background: linear-gradient(to right, var(--water), var(--orongchj));
     }
     &:after {
-        background: linear-gradient(to left,var(--water), var(--orange));
+        background: linear-gradient(to left,var(--water), var(--orongchj));
 	}
 }
